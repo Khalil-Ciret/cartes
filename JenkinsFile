@@ -25,8 +25,9 @@ pipeline {
             steps {
                 bat 'mvn test'
             }
-        }
-        post{
+        }  
+    }
+	post{
             	always {
             		echo "pipeline finished!"
             	}
@@ -39,7 +40,5 @@ pipeline {
             	success {
             		echo "1 super gommette pour le pipeline"
             	}
-            }
-    }
-    
+            }    
 }
