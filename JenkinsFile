@@ -25,6 +25,16 @@ pipeline {
             steps {
                 bat 'mvn test'
             }
+        }
+        stage ('package') {
+            steps {
+                bat 'mvn -DskipTests package'
+            }
+        }
+        stage ('deliver') {
+            steps {
+                bat 'mvn test'
+            }
         }  
     }
 	post{
