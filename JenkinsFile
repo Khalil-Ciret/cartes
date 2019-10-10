@@ -33,7 +33,7 @@ pipeline {
         }
         stage ('deliver') {
             steps {
-                bat 'mvn test'
+                bat 'script\\deliver.bat'
             }
         }  
     }
