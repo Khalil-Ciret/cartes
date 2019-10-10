@@ -39,6 +39,6 @@
         </configuration>
       </plugin>
     </plugins> 
-    <finalname>superPoker</finalname> 
+    <finalName>superPoker</finalName> 
   </build>
 </project>
