@@ -33,7 +33,7 @@ pipeline {
         }
         stage ('deliver') {
             steps {
-                bat 'script\\deliver.bat'
+                bat 'scripts\\deliver.bat'
             }
         }  
     }
