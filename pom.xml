@@ -38,6 +38,7 @@
           </archive>
         </configuration>
       </plugin>
-    </plugins>  
+    </plugins> 
+    <finalname>superPoker</finalname> 
   </build>
 </project>
