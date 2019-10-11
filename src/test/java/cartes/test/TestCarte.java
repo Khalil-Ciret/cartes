@@ -1,4 +1,4 @@
-package mc.cartes.test;
+package cartes.test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -16,7 +16,7 @@ class TestCarte {
 		// given
 		Signe signe = Signe.CARREAU;
 		Valeur valeur = Valeur.DAME;
-		//When
+		// when
 		Carte carte = new Carte(valeur, signe);
 		// then
 		assertAll(
@@ -25,7 +25,7 @@ class TestCarte {
 			()->assertEquals(Couleur.ROUGE, carte.getCouleur())
 		);
 	}
-
+	
 	@Test
 	void testEqualsNull() {
 		// given
@@ -46,4 +46,5 @@ class TestCarte {
 		// then
 		assertTrue(res);
 	}
+
 }
