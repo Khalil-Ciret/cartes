@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage ('build') {
             steps {
-                bat 'mvn clean compile'
+                sh 'mvn clean compile'
             }
             post{
             	always {
@@ -23,17 +23,17 @@ pipeline {
         }
         stage ('test') {
             steps {
-                bat 'mvn test'
+                sh 'mvn test'
             }
         }
         stage ('package') {
             steps {
-                bat 'mvn -DskipTests package'
+                sh 'mvn -DskipTests package'
             }
         }
         stage ('deliver') {
             steps {
-                bat 'scripts\\deliver.bat'
+                sh 'scripts\\deliver.sh'
             }
         }  
     }
